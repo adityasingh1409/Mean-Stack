@@ -1,0 +1,11 @@
+.navbarstyle {
+  color: #9314b6;
+  overflow: hidden;
+  
+
+}
+.navbarstyle:hover {
+  color: #b6141c;
+  cursor: pointer;
+ 
+}

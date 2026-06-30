@@ -1,0 +1,15 @@
+<div>
+    <p class="text-2xl p-20 font-serif h-80 w-30 bg-indigo-600 m-10 text-center">
+        Card works! {{ data() }}
+    </p>
+
+    @if (parentObj()) {
+    <p>{{ parentObj()!.name }}</p>
+    <p>{{ parentObj()!.age }}</p>
+    <p>{{ parentObj()!.c }}</p>
+    }
+
+    <p>
+        {{ BooleanClick() ? 'True' : 'False' }}
+    </p>
+</div>

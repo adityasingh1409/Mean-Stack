@@ -1,0 +1,25 @@
+<div style="margin:10px;">
+
+    @if(todo()?.done){
+
+    <p style="text-decoration:line-through;">
+        {{todo()?.task}}
+    </p>
+
+    }@else{
+
+    <p>
+        {{todo()?.task}}
+    </p>
+
+    }
+
+    <button (click)="doneTask()">
+        Done
+    </button>
+
+    <button (click)="deleteTask()">
+        Delete
+    </button>
+
+</div>

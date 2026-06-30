@@ -1,0 +1,40 @@
+<div class="max-w-3xl mx-auto mt-10 p-6 bg-gray-100 rounded-xl shadow-lg">
+
+    <h1 class="text-3xl font-bold text-center text-indigo-600 mb-6">
+        Accordion
+    </h1>
+
+    @for (item of accordionData; track $index) {
+
+    <div class="bg-white rounded-lg shadow-md mb-4 overflow-hidden border border-gray-200">
+
+        <!-- Header -->
+        <div
+            class="flex justify-between items-center px-6 py-4 cursor-pointer hover:bg-indigo-50 transition-all duration-300">
+
+            <h2 class="text-lg font-semibold text-gray-800">
+                {{ item.title }}
+            </h2>
+
+            <button (click)="toggle($index)"
+                class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg transition duration-300">
+
+                {{ item.isOpen ? 'Hide' : 'Show' }}
+
+            </button>
+        </div>
+
+        <!-- Content -->
+        @if (item.isOpen) {
+        <div class="px-6 pb-5 pt-2 bg-gray-50 border-t border-gray-200">
+            <p class="text-gray-600 leading-7">
+                {{ item.content }}
+            </p>
+        </div>
+        }
+
+    </div>
+
+    }
+
+</div>
