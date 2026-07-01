@@ -1,11 +1,9 @@
-.navbarstyle {
-  color: #9314b6;
-  overflow: hidden;
-  
-
+.commonNavStyle {
+  color: rgb(119, 29, 245);
 }
-.navbarstyle:hover {
-  color: #b6141c;
+
+.commonNavStyle:hover {
   cursor: pointer;
- 
+  color: rgb(175, 124, 124);
+  transition: all 0.5s ease-in-out;
 }
