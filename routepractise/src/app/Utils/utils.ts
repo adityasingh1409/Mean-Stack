@@ -111,3 +111,17 @@ export const users: User[] = [
     salary: 72000,
   },
 ];
+
+export const buttonConfig = {
+  sizes: {
+    SM: 'px-3 py-1.5 text-sm font-medium',
+    MD: 'px-4 py-2 text-base font-medium',
+    LG: 'px-6 py-3 text-lg font-semibold',
+    XL: 'px-8 py-4 text-xl font-bold w-full max-w-3xl min-w-xl',
+  },
+  types: {
+    PRIMARY: 'bg-blue-600 hover:bg-blue-700 text-white transition-colors duration-200 cursor-pointer shadow-md',
+    SECONDARY: 'bg-gray-600 hover:bg-gray-700 text-white transition-colors duration-200 cursor-pointer shadow-md',
+    DANGER: 'bg-red-600 hover:bg-red-700 text-white transition-colors duration-200 cursor-pointer shadow-md',
+  }
+};

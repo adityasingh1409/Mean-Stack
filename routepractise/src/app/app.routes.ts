@@ -1,25 +1,34 @@
 import { Routes } from '@angular/router';
+import { Home } from './pages/home/home';
 import { About } from './pages/about/about';
 import { Contact } from './pages/contact/contact';
-import { Home } from './pages/home/home';
-import { UserDetails } from './user-details/user-details';
+import { Userdetail } from './pages/user-details/user-details';
+import { Login } from './pages/login/login';
+import { Signup } from './pages/signup/signup';
 
 export const routes: Routes = [
     {
-        path:"home",
+        path: "",
+        component: Login
+    },
+    {
+        path: "signup",
+        component: Signup
+    },
+    {
+        path: "home",
         component: Home
     },
     {
-        path:"about",
+        path: "about",
         component: About
     },
     {
-        path:"contact",
+        path: "contact",
         component: Contact
     },
     {
-        path:"home/user/:userId",
-        component : UserDetails
+        path: 'home/user/:userId',
+        component: Userdetail
     }
 ];
-
